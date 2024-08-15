@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 50px;
+        background-color: #111;
+        z-index: 1000;
+      }
+
+      .logo {
+        font-size: 36px;
+        font-weight: bold;
+        color: #f5f5f5;
+      }
+
+      .logo .highlight {
+        color: #00a19c;
+      }
+
+      nav {
+        display: flex;
+        gap: 40px;
+        margin-left: 600px;
+      }
+
+      nav a {
+        color: #f5f5f5;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #00a19c;
+      }
+
+      .btn {
+        background-color: #00a19c;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 20px 10px;
+        display: inline-block;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #008f83;
+      }
+
+      .contact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #111;
+        border-radius: 15px;
+        padding: 40px;
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 150px;
+        margin-bottom: 60px;
+      }
+
+      .contact-section h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .social-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .contact-method {
+        background-color: #222;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .contact-method img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        transition: transform 0.2s;
+      }
+
+      .contact-method img:hover {
+        transform: scale(1.1);
+      }
+
+      .contact-method h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .contact-method p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .contact-method a {
+        color: #00a19c;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .contact-method a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        background-color: #111;
+        padding: 20px;
+        text-align: center;
+        color: #aaa;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">My<span class="highlight">Gallery</span></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contacts.html">Contact Me</a>
+      </nav>
+    </div>
+
+    <div class="contact-section">
+      <h1>Contacts</h1>
+      <div class="social-container">
+        <div class="contact-method">
+          <a href="https://www.facebook.com/GreekFreek34/"
+            ><img src="fb.png" alt="Facebook"
+          /></a>
+          <h3>Facebook</h3>
+          <p>
+            <a href="https://www.facebook.com/GreekFreek34/"
+              >Add me on Facebook</a
+            >.
+          </p>
+        </div>
+        <div class="contact-method">
+          <a href="https://www.instagram.com/_siaremm/"
+            ><img src="instagram.png" alt="Instagram"
+          /></a>
+          <h3>Instagram</h3>
+          <p>
+            <a href="https://www.instagram.com/_siaremm/"
+              >Follow me on Instagram</a
+            >.
+          </p>
+        </div>
+        <div class="contact-method">
+          <a href="https://www.tiktok.com/@siarem?_t=8oXIPg6VWPS&_r=1"
+            ><img src="tiktok.png" alt="Tiktok"
+          /></a>
+          <h3>Tiktok</h3>
+          <p>
+            <a href="https://www.tiktok.com/@siarem?_t=8oXIPg6VWPS&_r=1"
+              >Follow me on Tiktok</a
+            >.
+          </p>
+        </div>
+        <div class="contact-method">
+          <a href="#"><img src="whatsapp.png" alt="WhatsApp" /></a>
+          <h3>WhatsApp</h3>
+          <p><a href="#">Message me on WhatsApp</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      &copy; 2024 Christian Rei. All rights reserved.
+    </footer>
+  </body>
+</html>
